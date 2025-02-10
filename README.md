@@ -14,3 +14,20 @@ SubRaptor is a blazing-fast subdomain enumeration tool designed for information 
 - Powered by crt.sh for accurate results 🎯
 
 ## Usage
+- Download the tool:
+```bash
+git clone https://github.com/Uriel-SG/SubRaptor.git
+```
+- Install SubRaptor:
+```bash
+cd SubRaptor
+bash install.sh
+```
+- **Enjoy it!**
+```bash
+SubRaptor <example.com>
+```
+
+## Tested on
+- Kali Linux
+- Parrot OS
