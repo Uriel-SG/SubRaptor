@@ -5,7 +5,7 @@ INSTALL_PATH="/usr/local/bin/SubRaptor"
 
 if ! command -v jq &> /dev/null; then
     echo "🔧 Installing jq (required for JSON parsing)..."
-    sudo apt-get update -qq && sudo apt-get install -y jq > /dev/null 2>&1
+    sudo apt update -qq && sudo apt install -y jq > /dev/null 2>&1
     echo "✅ jq installed successfully!"
 fi
 
