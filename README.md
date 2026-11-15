@@ -3,7 +3,7 @@
 
 ![SubRaptorLogo](https://github.com/user-attachments/assets/46b08ef6-0fec-4277-b9cf-4a85200be3bc)
 
-*The Fastest Subdomain Enumeration Tool* ⚡
+*The Fastest Subdomain Enumeration Tool* 
 
 ## What is SubRaptor
 SubRaptor is a blazing-fast passive subdomain enumeration tool designed for information gathering and reconnaissance. It queries **Subfinder**, **Assetfinder** and **crt.sh** in parallel, then normalizes and deduplicates everything into one clean list.
@@ -11,12 +11,12 @@ SubRaptor is a blazing-fast passive subdomain enumeration tool designed for info
 No packets are sent to the target: all results come from public data sources.
 
 ## Why SubRaptor
-- Lightning-fast discovery: all sources run in parallel ⚡
-- Wider coverage by aggregating multiple sources 🔍
-- Clean, pipe-friendly output: results on stdout, logs on stderr 🎯
+- Lightning-fast discovery: all sources run in parallel 
+- Wider coverage by aggregating multiple sources 
+- Clean, pipe-friendly output: results on stdout, logs on stderr 
 - Per-source summary showing what each source found (and what only it found)
 - Optional DNS resolution and JSON output
-- One-command installer that takes care of the dependencies 🛠️
+- One-command installer that takes care of the dependencies 
 
 ## Versions
 | Command | Sources | Dependencies | Use it when |
