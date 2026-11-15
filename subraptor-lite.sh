@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SubRaptor - passive subdomain enumeration via Certificate Transparency (crt.sh)
+# SubRaptor Lite - passive subdomain enumeration via Certificate Transparency (crt.sh)
 set -uo pipefail
 
 VERSION="1.1.0"
@@ -21,7 +21,7 @@ fail() { printf '%s[!]%s %s\n' "$R" "$N" "$*" >&2; exit 1; }
 
 usage() {
     cat >&2 <<EOF
-${B}SubRaptor v${VERSION}${N} - passive subdomain enumeration (crt.sh)
+${B}SubRaptor Lite v${VERSION}${N} - passive subdomain enumeration (crt.sh)
 
 Usage: $(basename "$0") [options] <domain>
 
@@ -66,7 +66,7 @@ for dep in curl jq; do
 done
 
 log ""
-log "${B}${C}SubRaptor${N} ${D}v${VERSION}${N}"
+log "${B}${C}SubRaptor Lite${N} ${D}v${VERSION}${N}"
 log "${D}────────────────────────────────────${N}"
 log "${B}Target :${N} $TARGET"
 log "${B}Source :${N} crt.sh (Certificate Transparency)"
@@ -74,7 +74,7 @@ log ""
 log "[*] Querying crt.sh..."
 
 RAW="$(curl -sS --fail --max-time 90 --retry 3 --retry-delay 2 --retry-all-errors \
-    -A "SubRaptor/${VERSION}" \
+    -A "SubRaptor-Lite/${VERSION}" \
     "https://crt.sh/?q=%25.${TARGET}&output=json" 2>&1)" \
     || fail "Request to crt.sh failed (service is often overloaded, try again): ${RAW}"
 
